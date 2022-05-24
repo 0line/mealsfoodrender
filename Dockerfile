@@ -54,6 +54,6 @@ USER www-data
 USER root
 RUN chown root:bind /www/apialegra ; chmod g+rwx /www/apialegra
 # Expose port 80 and start php-fpm server
-EXPOSE 443
+EXPOSE 80
 #CMD ["php-fpm"]
-CMD php -S 0.0.0.0:443 -t public
+CMD php -S 0.0.0.0:80 -t public
