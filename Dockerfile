@@ -36,7 +36,7 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 RUN chmod +x /usr/local/bin/install-php-extensions
 
 #Install php extension
-RUN install-php-extensions gd xdebug http bz2 mcrypt mysqli pdo_mysql zip xml
+RUN install-php-extensions gd xdebug http bz2 mcrypt mysqli pdo_mysql zip xml pgsql pdo_pgsql
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
